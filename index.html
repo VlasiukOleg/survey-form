@@ -1,130 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Survey-Form</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css
 
 
 
 "
-        />
-        <link rel="stylesheet" href="./css/styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <h1 id="title" class="centered">freeCodeCamp Survey Form</h1>
-            <p id="description" class="centered">
-                Thank you for taking the time to help us improve the platform
-            </p>
-            <form id="survey-form">
-                <div class="form-group">
-                    <label id="name-label" for="name">Name</label>
-                    <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        class="form-input"
-                        placeholder="Enter your name"
-                    />
-                </div>
-                <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        class="form-input"
-                        placeholder="Enter your email"
-                    />
-                </div>
-                <div class="form-group">
-                    <label id="age-label" for="age">Age</label>
-                    <input
-                        type="number"
-                        name="age"
-                        id="age"
-                        min="16"
-                        max="120"
-                        class="form-input"
-                        placeholder="Age"
-                    />
-                </div>
-                <div class="form-group">
-                    <p>Which option best describes your current role?</p>
-                    <select id="dropdown" name="role" class="form-select">
-                        <option value selected disabled>Select current role</option>
-                        <option value="student">Student</option>
-                        <option value="job">Full Tima Job</option>
-                        <option value="learner">Full Time Learner</option>
-                        <option value="notSay">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <p>Would you recommend freeCodeCamp to a friend?</p>
-                    <label
-                        ><input
-                            type="radio"
-                            value="definitely"
-                            name="recommend"
-                            class="form-radio"
-                            checked
-                        />Definitely</label
-                    >
-                    <label
-                        ><input
-                            type="radio"
-                            value="maybe"
-                            name="recommend"
-                            class="form-radio"
-                        />Maybe</label
-                    >
-                    <label
-                        ><input
-                            type="radio"
-                            value="not-sure"
-                            name="recommend"
-                            class="form-radio"
-                        />Not sure</label
-                    >
-                </div>
-                <div class="form-group">
-                    <p>What would you like to see improved? (Check all that apply)</p>
-                    <label
-                        ><input type="checkbox" class="form-checkbox" /> Front-end Projects</label
-                    >
-                    <label><input type="checkbox" class="form-checkbox" /> Back-end Projects</label>
-                    <label
-                        ><input type="checkbox" class="form-checkbox" /> Data Visualization</label
-                    >
-                    <label><input type="checkbox" class="form-checkbox" /> Challenges</label>
-                    <label
-                        ><input type="checkbox" class="form-checkbox" /> Open Source
-                        Community</label
-                    >
-                    <label
-                        ><input type="checkbox" class="form-checkbox" /> Front-end Projects</label
-                    >
-                </div>
-                <div class="form-group">
-                    <p>Any comments or suggestions?</p>
-                    <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="5"
-                        class="form-textarea"
-                        placeholder="Enter your comment here..."
-                    ></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="submit" class="submit-btn">Submit</button>
-                </div>
-            </form>
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="centered">freeCodeCamp Survey Form</h1>
+      <p id="description" class="centered">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">
+            <svg class="icon">
+              <use href="./image/icons.svg#icon-user"></use></svg
+            >Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-input"
+            placeholder="Enter your name"
+            required
+          />
         </div>
-    </body>
+        <div class="form-group">
+          <label id="email-label" for="email"
+            ><svg class="icon">
+              <use href="./image/icons.svg#icon-envelop"></use></svg
+            >Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="age-label" for="age"
+            ><svg class="icon">
+              <use href="./image/icons.svg#icon-calendar"></use></svg
+            >Age</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="16"
+            max="120"
+            class="form-input"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>
+            <svg class="icon">
+              <use href="./image/icons.svg#icon-briefcase"></use></svg
+            >Which option best describes your current role?
+          </p>
+          <select id="dropdown" name="role" class="form-select">
+            <option value selected disabled>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Tima Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="notSay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label
+            ><input
+              type="radio"
+              value="definitely"
+              name="recommend"
+              class="form-radio"
+              checked
+            />Definitely</label
+          >
+          <label
+            ><input type="radio" value="maybe" name="recommend" class="form-radio" />Maybe</label
+          >
+          <label
+            ><input type="radio" value="not-sure" name="recommend" class="form-radio" />Not
+            sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label><input type="checkbox" class="form-checkbox" /> Front-end Projects</label>
+          <label><input type="checkbox" class="form-checkbox" /> Back-end Projects</label>
+          <label><input type="checkbox" class="form-checkbox" /> Data Visualization</label>
+          <label><input type="checkbox" class="form-checkbox" /> Challenges</label>
+          <label><input type="checkbox" class="form-checkbox" /> Open Source Community</label>
+          <label><input type="checkbox" class="form-checkbox" /> Front-end Projects</label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            class="form-textarea"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-btn">
+            Submit
+            <svg class="icon checkmark">
+              <use href="./image/icons.svg#icon-checkmark"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
